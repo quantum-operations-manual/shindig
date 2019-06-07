@@ -24,7 +24,6 @@ def get_engine_install(project_name):
     except ValueError:
         print('Cannot find the engine version required by this project:', project_version, 'please install it.')
         sys.exit(1)
-    print(engine)
     return engine
 
 def get_binaries_dir(install):
